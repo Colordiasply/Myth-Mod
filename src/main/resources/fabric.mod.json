@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mythos-mod",
+	"version": "${version}",
+	"name": "Mythos Mod",
+	"description": "Mod about Mythology",
+	"authors": [
+		"Color & Maya"
+	],
+	"contact": {
+		"homepage": "https://kaupenjoe.net",
+		"sources": "https://github.com/Tutorials-By-Kaupenjoel/Fabtic-Tutorial-1.21.x"
+	},
+	"license": "MIT",
+	"icon": "assets/mythos-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"colormaya.mythosmod.mod.MythosMod"
+		],
+		"fabric-datagen": [
+			"colormaya.mythosmod.mod.MythosModDataGenerator"
+		],
+        "client": [
+          "colormaya.mythosmod.mod.MythosModClient"
+          ]
+	},
+	"mixins": [
+		"mythos-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
