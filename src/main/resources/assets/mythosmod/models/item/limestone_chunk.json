@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mythosmod:item/limestone_chunk"
+    "layer0": "mythos_mod:item/limestone_chunk"
   }
 }
