@@ -8,8 +8,8 @@
 		"Color & Maya"
 	],
 	"contact": {
-		"homepage": "https://kaupenjoe.net",
-		"sources": "https://github.com/Tutorials-By-Kaupenjoel/Fabtic-Tutorial-1.21.x"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
 	"icon": "assets/mythos-mod/icon.png",
