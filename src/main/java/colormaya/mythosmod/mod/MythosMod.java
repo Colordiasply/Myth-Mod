@@ -12,6 +12,7 @@ public class MythosMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
         ModItems.registerModItems();
 	}
 }
