@@ -1,5 +1,6 @@
 package colormaya.mythosmod.mod;
 
+import colormaya.mythosmod.mod.block.ModBlocks;
 import colormaya.mythosmod.mod.item.ModItems;
 
 import net.fabricmc.api.ModInitializer;
@@ -12,7 +13,7 @@ public class MythosMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
