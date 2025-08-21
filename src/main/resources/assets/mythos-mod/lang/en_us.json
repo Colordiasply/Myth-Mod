@@ -2,5 +2,9 @@
   "item.mythos-mod.limestone_chunk": "Limestone Chunk",
   "item.mythos-mod.rosegold_ingot": "Rose Gold Ingot",
   "item.mythos-mod.rosegold_nugget": "Rose Gold Nugget",
-  "item.mythos-mod.raw_rosegold": "Raw Rose Gold"
+  "item.mythos-mod.raw_rosegold": "Raw Rose Gold",
+
+
+  "block.mythos-mod.limestone_bricks": "Limestone Bricks",
+  "block.mythos-mod.chiseled_limestone_bricks": "Chiseled Limestone Bricks"
 }
