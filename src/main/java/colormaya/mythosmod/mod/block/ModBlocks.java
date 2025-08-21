@@ -13,15 +13,11 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block LIMESTONE_BRICK = registerBlock( "limestone_brick",
-                new Block(AbstractBlock.Settings.create().strength(5f)
-                        .requiresTool().sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
     return Registry.register(Registries. BLOCK, Identifier.of(MythosMod.MOD_ID, name), block);
     }
-
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(MythosMod.MOD_ID, name),
@@ -31,7 +27,6 @@ public class ModBlocks {
         MythosMod.LOGGER.info("Registering Mod Blocks for " + MythosMod.MOD_ID);
 
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-                entries.add(ModBlocks.LIMESTONE_BRICK);
             });
         }
     }

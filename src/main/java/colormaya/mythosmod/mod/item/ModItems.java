@@ -13,11 +13,11 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item LIMESTONE_CHUNK = registerItem("limestone_chunk", new Item(new Item.Settings()));
 
-    public static final Item RoseGold_Ingot = registerItem("rosegold_ingot", new Item(new Item.Settings()));
+    public static final Item ROSEGOLD_INGOT = registerItem("rosegold_ingot", new Item(new Item.Settings()));
 
-    public static final Item RoseGold_Nugget = registerItem("rosegold_nugget", new Item(new Item.Settings()));
+    public static final Item ROSEGOLD_NUGGET = registerItem("rosegold_nugget", new Item(new Item.Settings()));
 
-    public static final Item Raw_RoseGold = registerItem("raw_rosegold", new Item(new Item.Settings()));
+    public static final Item RAW_ROSEGOLD = registerItem("raw_rosegold", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -29,10 +29,9 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LIMESTONE_CHUNK);
-            entries.add(RoseGold_Ingot);
-            entries.add(RoseGold_Ingot);
-            entries.add(RoseGold_Nugget);
-            entries.add(Raw_RoseGold);
+            entries.add(ROSEGOLD_INGOT);
+            entries.add(ROSEGOLD_NUGGET);
+            entries.add(RAW_ROSEGOLD);
 
         });
     }
