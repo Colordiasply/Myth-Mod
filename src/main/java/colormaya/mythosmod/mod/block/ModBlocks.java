@@ -19,24 +19,29 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(Instrument.BASEDRUM)));
     public static final Block CHISELED_LIMESTONE_BRICKS = registerBlock("chiseled_limestone_bricks",
             new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(Instrument.BASEDRUM)));
+    static final Block LIMESTONE = registerBlock("limestone",
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(Instrument.BASEDRUM)));
+    static final Block LIMESTONE_PILLAR = registerBlock("limestone_pillar",
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(Instrument.BASEDRUM)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(MythosMod.MOD_ID, name), block);
+    return Registry.register(Registries. BLOCK, Identifier.of(MythosMod.MOD_ID, name), block);
     }
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(MythosMod.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
-
     public static void registerModBlocks() {
         MythosMod.LOGGER.info("Registering Mod Blocks for " + MythosMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(LIMESTONE_BRICKS);
-            entries.add(CHISELED_LIMESTONE_BRICKS);
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+                entries.add(LIMESTONE);
+                entries.add(LIMESTONE_PILLAR);
+                entries.add(LIMESTONE_BRICKS);
+                entries.add(CHISELED_LIMESTONE_BRICKS);
 
-        });
+            });
+        }
     }
-}
