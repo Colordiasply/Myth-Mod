@@ -21,6 +21,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(Instrument.BASEDRUM)));
     static final Block LIMESTONE = registerBlock("limestone",
             new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(Instrument.BASEDRUM)));
+    static final Block LIMESTONE_PILLAR = registerBlock("limestone_pillar",
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(Instrument.BASEDRUM)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -36,6 +38,7 @@ public class ModBlocks {
 
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
                 entries.add(LIMESTONE);
+                entries.add(LIMESTONE_PILLAR);
                 entries.add(LIMESTONE_BRICKS);
                 entries.add(CHISELED_LIMESTONE_BRICKS);
 
